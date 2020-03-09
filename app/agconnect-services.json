@@ -1,0 +1,12 @@
+{
+	"client":{
+		"cp_id":"890507000000000357",
+		"product_id":"9105385871708536863",
+		"client_id":"314707830751888384",
+		"client_secret":"CAF33F61F99B28F2FD2CFFB346545F6C610B717711390042CCEEBCDB0308D89C",
+		"app_id":"101837009",
+		"package_name":"com.huawei.hms.location.workshop",
+		"api_key":"CV6OPVutJxqI0JNxAxfOH2sTVOMj4r18Pt5uy3zmipJTzL/lvtG9m61vUdt90zY5T/2I0E2dN6lD3ZLqf+nLK61eQDAq"
+	},
+	"configuration_version":"1.0"
+}

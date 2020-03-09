@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+// Add the following line
+apply plugin: 'com.huawei.agconnect'  // HUAWEI agconnect Gradle plugin
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.huawei.hms.location.workshop"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("singkey.jks")
+            storePassword "Flc3gvp1."
+            keyAlias "singkeyalias"
+            keyPassword "Flc3gvp1."
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.huawei.hms:location:4.0.1.300'
+}

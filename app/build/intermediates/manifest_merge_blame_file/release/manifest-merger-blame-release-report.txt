@@ -1,0 +1,190 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.huawei.hms.location.locationdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:5:5-78
+11-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+13-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:7:5-84
+13-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:7:22-82
+14    <!-- HMS-SDK引导升级HMS功能，访问OTA服务器需要网络权限 -->
+15    <uses-permission android:name="android.permission.INTERNET" /> <!-- HMS-SDK引导升级HMS功能，保存下载的升级包需要SD卡写权限 -->
+15-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:10:5-67
+15-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:10:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 检测网络状态 -->
+16-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:12:5-81
+16-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:12:22-78
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限 -->
+17-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:14:5-79
+17-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:14:22-76
+18    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 应用市场9.0版本必须使用该权限获取用户的服务地 -->
+18-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:16:5-83
+18-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:16:22-80
+19    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+19-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:18:5-106
+19-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:18:22-103
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21
+22    <application
+22-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:8:5-22:19
+23        android:allowBackup="true"
+23-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:9:9-35
+24        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+24-->[com.android.support:support-compat:28.0.0] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\4e7b3bbed8e6e29e2ba6d4fc6e8eccff\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:10:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:11:9-41
+28        android:supportsRtl="true"
+28-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:12:9-35
+29        android:theme="@style/AppTheme" >
+29-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:13:9-40
+30        <activity android:name="com.huawei.hms.location.workshop.RequestLocationUpdatesWithCallbackActivity" >
+30-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:15:9-21:20
+30-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:15:19-77
+31            <intent-filter>
+31-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:16:13-20:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:17:17-68
+32-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:17:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:19:17-76
+34-->C:\Users\j84155645\Documents\AndroidJava\LocationKit\app\src\main\AndroidManifest.xml:19:27-74
+35            </intent-filter>
+36        </activity>
+37        <!-- 声明Kit SDK的名称和版本号 -->
+38        <meta-data
+38-->[com.huawei.hms:location:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\128ee02ff256b1ea598771ee36134809\location-4.0.1.300\AndroidManifest.xml:14:9-16:50
+39            android:name="com.huawei.hms.client.service.name:location"
+39-->[com.huawei.hms:location:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\128ee02ff256b1ea598771ee36134809\location-4.0.1.300\AndroidManifest.xml:15:13-71
+40            android:value="location:4.0.1.300" /> <!-- 声明对Kit服务依赖的最低API Level -->
+40-->[com.huawei.hms:location:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\128ee02ff256b1ea598771ee36134809\location-4.0.1.300\AndroidManifest.xml:16:13-47
+41        <meta-data
+41-->[com.huawei.hms:location:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\128ee02ff256b1ea598771ee36134809\location-4.0.1.300\AndroidManifest.xml:18:9-20:33
+42            android:name="com.huawei.hms.min_api_level:location:location"
+42-->[com.huawei.hms:location:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\128ee02ff256b1ea598771ee36134809\location-4.0.1.300\AndroidManifest.xml:19:13-74
+43            android:value="1" />
+43-->[com.huawei.hms:location:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\128ee02ff256b1ea598771ee36134809\location-4.0.1.300\AndroidManifest.xml:20:13-30
+44        <!--
+45        为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据，
+46        流水线打包时会替换成HMSVER对应的版本号，不要手动修改
+47        -->
+48        <meta-data
+48-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:26:9-28:46
+49            android:name="com.huawei.hms.client.service.name:base"
+49-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:27:13-67
+50            android:value="base:4.0.1.300" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+50-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:28:13-43
+51        <meta-data
+51-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:31:9-33:33
+52            android:name="com.huawei.hms.min_api_level:base:hmscore"
+52-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:32:13-69
+53            android:value="1" />
+53-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:33:13-30
+54
+55        <activity
+55-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:35:9-45:20
+56            android:name="com.huawei.hms.activity.BridgeActivity"
+56-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:36:13-66
+57            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout"
+57-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:37:13-124
+58            android:excludeFromRecents="true"
+58-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:38:13-46
+59            android:exported="false"
+59-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:39:13-37
+60            android:hardwareAccelerated="true"
+60-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:40:13-47
+61            android:theme="@android:style/Theme.Translucent" >
+61-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:41:13-61
+62            <meta-data
+62-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:42:13-44:77
+63                android:name="hwc-theme"
+63-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:43:17-41
+64                android:value="androidhwext:style/Theme.Emui.Translucent" />
+64-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:44:17-74
+65        </activity>
+66        <activity
+66-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:46:9-49:20
+67            android:name="com.huawei.hms.activity.EnableServiceActivity"
+67-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:47:13-73
+68            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout" >
+68-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:48:13-106
+69        </activity>
+70        <activity
+70-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:50:9-58:20
+71            android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+71-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:51:13-84
+72            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout"
+72-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:52:13-91
+73            android:exported="false"
+73-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:53:13-37
+74            android:theme="@style/upsdkDlDialog" >
+74-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:54:13-49
+75            <meta-data
+75-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:42:13-44:77
+76                android:name="hwc-theme"
+76-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:43:17-41
+77                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+77-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:44:17-74
+78        </activity>
+79        <activity
+79-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:59:9-67:20
+80            android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+80-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:60:13-84
+81            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+81-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:61:13-106
+82            android:exported="false"
+82-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:62:13-37
+83            android:theme="@style/upsdkDlDialog" >
+83-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:63:13-49
+84            <meta-data
+84-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:42:13-44:77
+85                android:name="hwc-theme"
+85-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:43:17-41
+86                android:value="androidhwext:style/Theme.Emui.Translucent" />
+86-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:44:17-74
+87        </activity>
+88
+89        <provider
+89-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:69:9-74:20
+90            android:name="com.huawei.hms.update.provider.UpdateProvider"
+90-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:70:13-73
+91            android:authorities="com.huawei.hms.location.locationdemo.hms.update.provider"
+91-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:71:13-71
+92            android:exported="false"
+92-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:72:13-37
+93            android:grantUriPermissions="true" >
+93-->[com.huawei.hms:base:4.0.1.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\890f6ed0661df592e69187053db1edb6\base-4.0.1.300\AndroidManifest.xml:73:13-47
+94        </provider>
+95        <provider
+95-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\a0f1accee3510766b0363d1ccc845aae\agconnect-core-1.0.0.300\AndroidManifest.xml:10:9-13:40
+96            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+96-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\a0f1accee3510766b0363d1ccc845aae\agconnect-core-1.0.0.300\AndroidManifest.xml:11:13-90
+97            android:authorities="com.huawei.hms.location.locationdemo.AGCInitializeProvider"
+97-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\a0f1accee3510766b0363d1ccc845aae\agconnect-core-1.0.0.300\AndroidManifest.xml:12:13-73
+98            android:exported="false" />
+98-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\a0f1accee3510766b0363d1ccc845aae\agconnect-core-1.0.0.300\AndroidManifest.xml:13:13-37
+99
+100        <service
+100-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\a0f1accee3510766b0363d1ccc845aae\agconnect-core-1.0.0.300\AndroidManifest.xml:15:9-17:40
+101            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+101-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\a0f1accee3510766b0363d1ccc845aae\agconnect-core-1.0.0.300\AndroidManifest.xml:16:13-70
+102            android:exported="false" />
+102-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\j84155645\.gradle\caches\transforms-2\files-2.1\a0f1accee3510766b0363d1ccc845aae\agconnect-core-1.0.0.300\AndroidManifest.xml:17:13-37
+103    </application>
+104
+105</manifest>
